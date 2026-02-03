@@ -341,6 +341,10 @@ h5, .tinyText
     #workArea{
         margin-bottom:40px; 
     }
+      #formsAuthenticationArea{
+        margin-right: 10px;
+          padding-right:10px;
+    }
 }
 
 /* Form factor: intermediate layout (WAB in non-snapped view falls in here) */
@@ -378,19 +382,17 @@ h5, .tinyText
     .fullWidthIndent {
         width: 376px;
     }
-    #userNameInput{
-        margin-right: 80px;
+      #formsAuthenticationArea{
+        margin-right: 10px;
+          padding-right:10px;
     }
 }
 
 @media only screen and (max-width: 450px) {
     body {
         font-size: 0.8em;
-       
     }
-    #userNameInput{
-        margin-right: 80px;
-    }
+
     #content, #footer {
 	float: left;
 	width: 100%;
@@ -404,6 +406,10 @@ h5, .tinyText
 
     span.submit, input[type="submit"] {
         font-size: 0.9em;
+    }
+      #formsAuthenticationArea{
+        margin-right: 10px;
+          padding-right:10px;
     }
 
     .fullWidth
@@ -439,6 +445,10 @@ h5, .tinyText
     #contentWrapper
     {
         width:260px;
+    }
+      #formsAuthenticationArea{
+        margin-right: 10px;
+          padding-right:10px;
     }
     .idpDescription
     {
