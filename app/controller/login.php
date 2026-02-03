@@ -14,6 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 
      if( $user && $user['pwd'] === $pwd){
     $_SESSION['user'] = $user;
+  
+    session_regenerate_id(true);
     header("Location: ../view/dashboard.php");
     exit();
 } else {

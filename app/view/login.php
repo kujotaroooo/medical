@@ -20,7 +20,12 @@ session_start();
         <link rel="stylesheet" type="text/css" href="/medical/public/css/style.css?id=C3B723FC2F89073B3811813EDE024F6A64AABFCBBB3D81F9A985558AB00B8FC3" /><style>.illustrationClass {background-image:url(/adfs/portal/illustration/illustration.jpg?id=D15CF3C7F4E3571428A79296B0280DCA21E3F9626F2CAD1D96615C4F8D8913B1);}</style>
 
     </head>
-
+<style>
+    #header{
+        position:relative;
+        left:5px;
+    }
+</style>
     <body dir="ltr" class="body">
    
     <script type="text/javascript" language="JavaScript">
