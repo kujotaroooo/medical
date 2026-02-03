@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
  <!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -43,7 +45,7 @@
     <div id="loginArea">        
         <div id="loginMessage" class="groupMargin">Log in</div>
 
-        <form method="post" id="loginForm" autocomplete="off" novalidate="novalidate" action="/medical/app/controller/loginAuth.php" >
+        <form method="POST" id="loginForm" autocomplete="off" action="../controller/login.php" >
             <div id="error" class="fieldMargin error smallText">
                 <span id="errorText" for="" aria-live="assertive" role="alert"></span>
             </div>
@@ -51,7 +53,7 @@
             <div id="formsAuthenticationArea">
                 <div id="userNameArea">
                     <label id="userNameInputLabel" for="userNameInput" class="hidden">User Account</label>
-                    <input id="userNameInput" name="UserName" type="email" value="" tabindex="1" class="text fullWidth"
+                    <input id="userNameInput" name="UserName" type="text" value="" tabindex="1" class="text fullWidth"
                         spellcheck="false" placeholder="@alang-alang" autocomplete="off"/>
                 </div>
 
@@ -59,19 +61,22 @@
                     <label id="passwordInputLabel" for="passwordInput" class="hidden">Password</label>
                     <input id="passwordInput" name="Password" type="password" tabindex="2" class="text fullWidth"
                         placeholder="Password" autocomplete="off"/>
+                        <?php
+                      if (isset($_SESSION['error'])) {
+    echo "<p style='color:red;'>".$_SESSION['error']."</p>";
+    unset($_SESSION['error']);
+}
+                        ?>
                 </div>
-                <div id="kmsiArea" style="display:none">
-                    <input type="checkbox" name="Kmsi" id="kmsiInput" value="true" tabindex="3" />
-                    <label for="kmsiInput">Keep me signed in</label>
-                </div>
+            
                 <div id="submissionArea" class="submitMargin">
-                    <input id="LoginB" type="button" value="Log in">
+                    <input id="LoginB" type="submit" name="login" value="Log in">
                 </div>
             </div>
             <input id="optionForms" type="hidden" name="AuthMethod" value="FormsAuthentication"/>
     
       </div>
-
+</form>
        
 
        
