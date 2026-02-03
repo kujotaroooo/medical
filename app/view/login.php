@@ -18,6 +18,11 @@
         <link rel="stylesheet" type="text/css" href="../css/style.css?id=C3B723FC2F89073B3811813EDE024F6A64AABFCBBB3D81F9A985558AB00B8FC3" /><style>.illustrationClass {background-image:url(/adfs/portal/illustration/illustration.jpg?id=D15CF3C7F4E3571428A79296B0280DCA21E3F9626F2CAD1D96615C4F8D8913B1);}</style>
 
     </head>
+	<style>
+		body{
+ 
+ 		}
+	</style>
     <body dir="ltr" class="body">
     <div id="noScript" style="position:static; width:100%; height:100%; z-index:100">
         <h1>JavaScript required</h1>
@@ -266,14 +271,25 @@
         }
     </style>
 
-    <!-- Div containing small "waiting" wheel -->
- 
+   
+</div></div></div>
+         </form>
+      </div>
+
+       
+
+       
+    </div>
+
+    </div>
+
+                    </div>
                 </main>
                 <div id="footerPlaceholder"></div>
             </div>
             <footer id="footer">
                 <div id="footerLinks" class="floatReverse">
-                   
+                    <div><span id="copyright">&#169; 2024 Alang Alang State University</span><a id="# " class="pageLink footerLink " href="">Home</a><a id="" class="pageLink footerLink" href="">Helpdesk</a></div>
                 </div>
             </footer>
         </div>     
