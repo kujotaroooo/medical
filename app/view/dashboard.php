@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user']) ) {
-      header("Location: ../view/login.php");
+      header("Location: 404.php");
     
     exit();
 }
