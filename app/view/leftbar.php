@@ -10,7 +10,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">Clinic Records VSUA</a>
+				<a class="navbar-brand" href="dashboard.php">Clinic Records VSUA</a>
 			</div>
 						 <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">

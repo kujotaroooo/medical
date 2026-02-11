@@ -15,6 +15,9 @@ if (!isset($_SESSION['user'])) {
     <link href="/medical/public/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/medical/public/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="/medical/public/css/sb-admin-2.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
@@ -23,9 +26,9 @@ if (!isset($_SESSION['user'])) {
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="page-header">
-                        <?php echo strtoupper("welcome " . htmlentities($_SESSION['user']['username'])); ?>
-                    </h4>
+                    
+                       <h1 style="font-family: Poppins;">DASHBOARD</h1>
+                    
                 </div>
             </div>
 
