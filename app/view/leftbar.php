@@ -19,43 +19,13 @@
                    <a href="dashboard.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-    <a href="#"><i class="fa fa-file fa-fw"></i> Medical Records <span class="fa arrow"></span></a>
+    <a href=""><i class="fa fa-file fa-fw"></i> Medical Records <span class="fa arrow"></span></a>
     <ul class="nav nav-second-level">
         
-        <li>
-            <a href="#">BEED <span class="fa arrow"></span></a>
-            <ul class="nav nav-third-level">
-                <li><a href="add-course.php?course=BEED&year=1">2026</a></li>
-                
-            </ul>
-        </li>
-           <li>
-            <a href="#">BSIT <span class="fa arrow"></span></a>
-            <ul class="nav nav-third-level">
-                <li><a href="add-course.php?course=BEED&year=1">1st Year</a></li>
-                <li><a href="add-course.php?course=BEED&year=2">2nd Year</a></li>
-                <li><a href="add-course.php?course=BEED&year=3">3rd Year</a></li>
-                <li><a href="add-course.php?course=BEED&year=4">4th Year</a></li>
-            </ul>
-        </li>
-              <li>
-            <a href="#">BSIT <span class="fa arrow"></span></a>
-            <ul class="nav nav-third-level">
-                <li><a href="add-course.php?course=BSIT&year=1">1st Year</a></li>
-                <li><a href="add-course.php?course=BSIT&year=2">2nd Year</a></li>
-                <li><a href="add-course.php?course=BSIT&year=3">3rd Year</a></li>
-                <li><a href="add-course.php?course=BSIT&year=4">4th Year</a></li>
-            </ul>
-        </li>
-              <li>
-            <a href="#">BSMATH <span class="fa arrow"></span></a>
-            <ul class="nav nav-third-level">
-                <li><a href="add-course.php?course=BSMATH&year=1">1st Year</a></li>
-                <li><a href="add-course.php?course=BSMATH&year=2">2nd Year</a></li>
-                <li><a href="add-course.php?course=BSMATH&year=3">3rd Year</a></li>
-                <li><a href="add-course.php?course=BSMATH&year=4">4th Year</a></li>
-            </ul>
-        </li>
+  <?php
+include_once('../model/fetchProgram.php');
+  ?>
+          
 
         <li><a href="add-course.php?course=BSIT">Add Program</a></li>
    
@@ -95,13 +65,26 @@
                         </li>
 
 
-                   <li>
-                            <a href="logout.php"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
-                  </li>
+    <li>
+    <a onclick="confirmLogout(); ">
+        <i class="fa fa-sign-out fa-fw"></i>Logout
+    </a>
+</li>
+
                   </ul>      				  
                 </div>
                
             </div>
             
         </nav>
+ 
+
+<script>
+function confirmLogout() {
+    if (confirm("Are you sure you want to logout?")) {
+        window.location.href = "../controller/logout.php";
+    }
+}
+</script>
+
    

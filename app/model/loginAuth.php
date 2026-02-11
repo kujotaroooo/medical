@@ -1,9 +1,9 @@
 <?php
 
-require_once '../../config/config.php';
 
-function getUser($username){
-    global $conn;
+
+function getUser( $conn, $username){
+
 
     $sql = "SELECT * FROM admin WHERE username = ?";
     $stmt = $conn->prepare($sql);

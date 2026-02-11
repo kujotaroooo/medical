@@ -4,6 +4,7 @@ if (!isset($_SESSION['user'])) {
     header("Location: 404.php");
     exit();
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,15 +34,12 @@ if (!isset($_SESSION['user'])) {
                     <div class="panel panel-default">
                         <div class="panel-heading">Dashboard</div>
                         <div class="panel-body">
-                            <?php echo $_SESSION['user']['username']; ?>
+                        
                         </div>
                     </div>
                 </div>
             </div>
 
-            <form method="post" action="../controller/logout.php">
-                <input type="submit" name="logout" value="Logout">
-            </form>
         </div>
     </div>
 

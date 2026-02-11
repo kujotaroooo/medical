@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once '../model/loginAuth.php';
-
+require_once '../../config/config.php';
 
 if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 
@@ -10,12 +10,13 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
         $username = $_POST["UserName"];
         $pwd = $_POST["Password"];
 
-        $user = getUser($username);
+        $user = getUser($conn,$username);
 
-     if( $user && $user['pwd'] === $pwd){
+     if( $user && $user['password'] === $pwd){
     $_SESSION['user'] = $user;
   
     session_regenerate_id(true);
+ 
     header("Location: ../view/dashboard.php");
     exit();
 } else {
