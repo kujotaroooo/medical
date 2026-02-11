@@ -50,7 +50,7 @@ session_start();
     <div id="loginArea">        
         <div id="loginMessage" class="groupMargin">Log in</div>
 
-        <form method="POST" id="loginForm" autocomplete="off" action="../controller/login.php" >
+        <form method="POST" id="loginForm" autocomplete="off" action="/medical/app/controller/login.php" >
             <div id="error" class="fieldMargin error smallText">
                 <span id="errorText" for="" aria-live="assertive" role="alert"></span>
             </div>

@@ -17,11 +17,11 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
   
     session_regenerate_id(true);
  
-    header("Location: ../view/dashboard.php");
+    header("Location: /medical/app/view/dashboard.php");
     exit();
 } else {
     $_SESSION['error'] = "Wrong Credentials";
-    header("Location: ../view/login.php");
+    header("Location: /medical/app/view/login.php");
     exit();
 }
 

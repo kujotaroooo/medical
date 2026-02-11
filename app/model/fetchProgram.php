@@ -9,18 +9,18 @@ $programs = $result->fetch_all(MYSQLI_ASSOC); // tapos ig fetch all as associati
 
 
 ?>
-<ul class="nav">
 <?php foreach ($programs as $program): ?>
     <li>
-       
-        <a href="">
-            <?= $program['program_name'] ?> <span class="fa arrow"></span>
+    
+        <a href="#">
+               <i class="fa fa-graduation-cap fa-fw"></i>
+            <?php echo $program['program_code']; ?>
+            <span class="fa arrow"></span>
         </a>
 
-     
-    <?php include('fetchYear.php'); ?>
+        <ul class="nav nav-third-level collapse">
+            <?php include('fetchYear.php'); ?>
+        </ul>
     </li>
 <?php endforeach; ?>
-</ul>
-
 

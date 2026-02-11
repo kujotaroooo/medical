@@ -1,4 +1,5 @@
 
+
 <link href="/medical/public/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <nav class="navbar navbar-default navbar-static-top" role="navigation"
 			style="margin-bottom: 0">
@@ -27,7 +28,7 @@ include_once('../model/fetchProgram.php');
   ?>
           
 
-        <li><a href="add-course.php?course=BSIT">Add Program</a></li>
+        <li><a href="/medical/app/view/addprogram.php "><i class="fa fa-plus-circle fa-fw"></i> Add Program</a></li>
    
     </ul>
 </li>
