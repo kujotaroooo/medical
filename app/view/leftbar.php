@@ -38,10 +38,11 @@ include_once('../model/fetchProgram.php');
                             <a href="#"><i class="fa fa-user fa-fw"></i>Student<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="add-student.php">Add Student</a>
+                                    
+                                    <a href="addstudent.php"><i class="fa fa-plus-circle fa-fw"></i>Add Student</a>
                                 </li>
                                 <li>
-                                    <a href="manage-students.php">View</a>
+                                    <a href="search.php"><i class="fa fa-search fa-fw"></i>Search Students</a>
                                 </li>
                             </ul>
                            

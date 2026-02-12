@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Program</title>
 
-    <!-- CSS Links -->
     <link href="/medical/public/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/medical/public/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="/medical/public/css/sb-admin-2.css" rel="stylesheet">
@@ -15,10 +17,9 @@
 </head>
 <body>
     <div id="wrapper">
-        <!-- Sidebar -->
+    
         <?php include('leftbar.php'); ?>
 
-        <!-- Page Content -->
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
@@ -26,7 +27,7 @@
                 </div>
             </div>
 
-            <!-- Centered form -->
+         
             <div class="content-wrapper">
                 <div class="form-box">
                     <form method="post" action="../controller/addProgram.php">
@@ -43,7 +44,17 @@
 
                      
 
-                       
+                       <?php if (isset($_SESSION['error'])):?>
+      <div class="alert alert-danger">
+        Something went wrong.
+    </div>
+<?php endif;  unset($_SESSION['error']); ?>
+
+<?php if(isset($_SESSION['success'])):?>
+    <div class="alert alert-success">
+        <?php echo $_SESSION['success']; ?>
+    </div>
+<?php endif;  unset($_SESSION['success']); ?>
 
                         <div class="form-actions">
                             <input type="submit" value="Add Program" class="btn btn-primary" name="add">
