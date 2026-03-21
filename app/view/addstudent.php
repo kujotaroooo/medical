@@ -92,9 +92,11 @@
                             <div class="form-group">
                                 <label>Sex</label>
                                 <select name="sex">
-                                    <option value="">Select Sex</option>
+                               
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
+                                      <option value="female">yes please</option>
+                                      
                                 </select>
                             </div>
                         </div>

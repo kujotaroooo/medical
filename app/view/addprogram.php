@@ -46,7 +46,7 @@ session_start();
 
                        <?php if (isset($_SESSION['error'])):?>
       <div class="alert alert-danger">
-        Something went wrong.
+       <?php echo $_SESSION['error']; ?>
     </div>
 <?php endif;  unset($_SESSION['error']); ?>
 
