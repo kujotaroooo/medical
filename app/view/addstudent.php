@@ -25,7 +25,7 @@
 <body>
 <div id="wrapper">
 
-    <?php include('leftbar.php'); ?>
+    <?php include('nav/leftbar.php'); ?>
 
     <div id="page-wrapper">
 
@@ -46,7 +46,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Student Number</label>
-                                <input type="text" name="student_number" placeholder="2024-0001" required>
+                                <input type="text" name="stud_number" placeholder="2024-0001" required>
                             </div>
                         </div>
 

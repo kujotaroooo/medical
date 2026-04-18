@@ -22,7 +22,7 @@ if (!isset($_SESSION['user'])) {
 </head>
 <body>
     <div id="wrapper">
-        <?php include('leftbar.php'); ?>
+        <?php include('nav/leftbar.php'); ?>
 
         <div id="page-wrapper">
             <div class="row">

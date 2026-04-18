@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once '../../config/config.php';
-include('../model/insertProgram.php');
+include('../model/cruds.php');
 
 if (isset($_POST['add'])) {
     if (empty($_POST['code']) || empty($_POST['program'])) {
