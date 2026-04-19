@@ -6,7 +6,7 @@ require_once '../../config/config.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search Student</title>
+    <title>Search Student -- Medical Record</title>
 
  
     <link href="/medical/public/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">

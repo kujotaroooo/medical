@@ -6,14 +6,11 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Program</title>
-
+    <title>Add Program -- Medical Record</title>
     <link href="/medical/public/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/medical/public/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="/medical/public/css/sb-admin-2.css" rel="stylesheet">
     <link href="/medical/public/css/add.css" rel="stylesheet">
-
-   
 </head>
 <body>
     <div id="wrapper">
@@ -26,8 +23,6 @@ session_start();
                     <h2  class="page-header">Add Program</h2>
                 </div>
             </div>
-
-         
             <div class="content-wrapper">
                 <div class="form-box">
                     <form method="post" action="../controller/addProgram.php">
@@ -41,30 +36,23 @@ session_start();
                             <label>Program Code</label>
                             <input type="text" name="code" placeholder="BSIT" class="form-control">
                         </div>
-
-                     
-
-                       <?php if (isset($_SESSION['error'])):?>
-      <div class="alert alert-danger">
-       <?php echo $_SESSION['error']; ?>
-    </div>
-<?php endif;  unset($_SESSION['error']); ?>
-
-<?php if(isset($_SESSION['success'])):?>
-    <div class="alert alert-success">
-        <?php echo $_SESSION['success']; ?>
-    </div>
-<?php endif;  unset($_SESSION['success']); ?>
-
+                        <?php if (isset($_SESSION['error'])):?>
+                            <div class="alert alert-danger">
+                        <?php echo $_SESSION['error']; ?>
+                        </div>
+                        <?php endif;  unset($_SESSION['error']); ?>
+                        <?php if(isset($_SESSION['success'])):?>
+                            <div class="alert alert-success">
+                                <?php echo $_SESSION['success']; ?>
+                            </div>
+                        <?php endif;  unset($_SESSION['success']); ?>
                         <div class="form-actions">
                             <input type="submit" value="Add Program" class="btn btn-primary" name="add">
-                            
                         </div>
 
                     </form>
                 </div>
             </div>
-
         </div>
         <!-- /#page-wrapper -->
     </div>

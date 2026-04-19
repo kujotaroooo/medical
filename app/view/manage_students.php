@@ -4,14 +4,13 @@ if (!isset($_SESSION['user'])) {
     header("Location: 404.php");
     exit();
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard -- Medical Record</title>
+    <title>Manage Students -- Medical Record</title>
     <link href="../../public/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../public/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="../../public/css/sb-admin-2.css" rel="stylesheet">
@@ -28,7 +27,7 @@ if (!isset($_SESSION['user'])) {
             <div class="row">
                 <div class="col-lg-12">
                     
-                    <h1 style="font-family: Poppins;">DASHBOARD</h1>
+                    <h1 style="font-family: Poppins;">MANAGE STUDENTS</h1>
                     
                 </div>
             </div>

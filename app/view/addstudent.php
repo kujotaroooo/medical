@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add Student</title>
+    <title>Add Student -- Medical Record</title>
 
     <link href="/medical/public/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/medical/public/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
