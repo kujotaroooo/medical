@@ -12,10 +12,9 @@ $search = isset($_GET['query']);
         if ($std['student_number'] == $search || $std['first_name'] == $search || $std['last_name'] == $search || $std['middle_name'] == $search):
 ?>
     <li>
-    
         <a href="#">
             <i class="fa fa-graduation-cap fa-fw"></i>
-            <?php echo $std['student_number'] . " - " . $std['last_name'] . ", " . $std['first_name'] . " " . $std['middle_name']; ?>
+            <?php echo $std['student_number'] . " - " . ucfirst($std['last_name']) . ", " . ucfirst($std['first_name']) . " " . ucfirst($std['middle_name']); ?>
             <span class="fa arrow"></span>
         </a>
 

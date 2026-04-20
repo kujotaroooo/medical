@@ -48,10 +48,10 @@
                             <a href="session.php"><i class="fa fa-calendar fa-fw"></i>Session</a>
                         </li>
                         <li>
-                            <a href="change-password.php"><i class="fa fa-cog fa-fw"></i> Change Password</a>
+                            <a href="change_password.php"><i class="fa fa-cog fa-fw"></i> Change Password</a>
                         </li>
                         <li>
-                            <a href="admin-profile.php"><i class="fa fa-user fa-fw"></i>Admin Profile</a>
+                            <a href="admin_profile.php"><i class="fa fa-user fa-fw"></i>Admin Profile</a>
                         </li>
                         <li>
                             <a onclick="confirmLogout(); ">
