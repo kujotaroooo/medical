@@ -1,14 +1,12 @@
 <?php
-require_once '../../config/config.php';
-
-$sql = "SELECT * FROM students";
-$stmt = $conn->prepare($sql); // prepare ini for statement
-$stmt->execute();              // tapos ig execute
-$result = $stmt->get_result(); // ngan ig get an result
-$stud = $result->fetch_all(MYSQLI_ASSOC); // tapos ig fetch all as associative array
-$search = isset($_GET['query']);
-?>
-<?php foreach ($stud as $std):
+    require_once '../../config/config.php';
+    $sql = "SELECT * FROM students";
+    $stmt = $conn->prepare($sql); // prepare ini for statement
+    $stmt->execute();          // tapos ig execute
+    $result = $stmt->get_result(); // ngan ig get an result
+    $stud = $result->fetch_all(MYSQLI_ASSOC); // tapos ig fetch all as associative array
+    $search = isset($_GET['query']);
+    foreach ($stud as $std):
         if ($std['student_number'] == $search || $std['first_name'] == $search || $std['last_name'] == $search || $std['middle_name'] == $search):
 ?>
     <li>

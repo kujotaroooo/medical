@@ -46,13 +46,13 @@ session_start();
                                             <div id="userNameArea">
                                                 <label id="userNameInputLabel" for="userNameInput" class="hidden">User Account</label>
                                                 <input id="userNameInput" name="UserName" type="text" value="" tabindex="1" class="text fullWidth"
-                                                    spellcheck="false" placeholder="@alang-alang" autocomplete="off"/>
+                                                    spellcheck="false" placeholder="@alang-alang" autocomplete="off"/ required>
                                             </div>
 
                                             <div id="passwordArea">
                                                 <label id="passwordInputLabel" for="passwordInput" class="hidden">Password</label>
                                                 <input id="passwordInput" name="Password" type="password" tabindex="2" class="text fullWidth"
-                                                    placeholder="Password" autocomplete="off"/>
+                                                    placeholder="Password" autocomplete="off"/ required>
                                                 <?php
                                                     if (isset($_SESSION['error'])) {
                                                         echo "<p style='color:red;'>".$_SESSION['error']."</p>";

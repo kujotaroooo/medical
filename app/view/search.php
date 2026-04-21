@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../../config/config.php'; 
+require_once '../../config/config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -101,9 +101,7 @@ require_once '../../config/config.php';
                     </div>
                 </form>
                 <div>
-                    <?php
-                        include_once('../model/fetchStudent.php'); # check the file
-                    ?>
+                    <?php include_once('../model/fetchStudent.php'); # check the file ?>
                 </div>
             </div>
         </div>

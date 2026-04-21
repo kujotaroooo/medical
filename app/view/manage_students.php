@@ -38,7 +38,7 @@ if (!isset($_SESSION['user'])) {
                         <div class="panel-heading">Dashboard</div>
                         <div class="panel-body">
                         
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>
