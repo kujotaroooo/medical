@@ -8,7 +8,7 @@ $years =  $result->fetch_all(MYSQLI_ASSOC);
 <ul class="nav nav-third-level">
 <?php foreach($years as $year):?>
     <li>
-        <a href="">
+        <a href="medRecord.php?prog=<?= $program['program_id'] ?>&&yr=<?= $year['year_id'] ?>">
             <i class="fa fa-level-up fa-fw"></i>
             <?php echo $year['year_level_name'] ?>
         </a>

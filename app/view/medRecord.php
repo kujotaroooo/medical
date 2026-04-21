@@ -1,7 +1,14 @@
 <?php
 session_start();
 require_once '../../config/config.php';
-include_once ('../model/fetchStudent.php')
+$yr = $_GET['yr'];
+$prog = $_GET['prog'];
+if(empty($prog) || empty($yr)){
+    echo "<script>
+            alert('Can't proceed without Program or Year Level');
+        </script>";
+    header('Location: dashboard.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -102,17 +109,6 @@ include_once ('../model/fetchStudent.php')
                     </div>
                 </form>
                 <div>
-                    <?php
-                        $search = !empty(isset($_GET['query'])); # query from the url is not empty
-                        $students = getAllStudents(); # this is a function from the fetchStudent file include at 4th line
-                        foreach ($students as $std): # loop for each students from the function getAllStudents
-                            if ($std['student_number'] == $search || $std['first_name'] == $search || $std['last_name'] == $search || $std['middle_name'] == $search): # compare each students from ur search
-                                echo "<p><a href=>"
-                                        . ucwords($std['student_number'] . " - " . $std['last_name'] . ", " . $std['first_name'] . " " . $std['middle_name']) . 
-                                    "</a></p>" ; # do whatever you want
-                            endif;
-                        endforeach;
-                    ?>
                 </div>
             </div>
         </div>
