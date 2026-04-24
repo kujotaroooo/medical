@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -12,6 +10,7 @@ session_start();
         <meta http-equiv="expires" content="-1"/>
         <meta name='mswebdialog-title' content='Connecting to Valdosta State University'/>
         <title>Login -- Medical Record</title>
+         <link rel="stylesheet" href="/medical/public/css/all.css">
         <link rel="stylesheet" type="text/css" href="/medical/public/css/style.css" /><style>.illustrationClass {background-image:url(/adfs/portal/illustration/illustration.jpg?id=D15CF3C7F4E3571428A79296B0280DCA21E3F9626F2CAD1D96615C4F8D8913B1);}</style>
     </head>
 <style>

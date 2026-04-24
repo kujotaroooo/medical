@@ -1,10 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['user'])) {
-    header("Location: 404.php");
-    exit();
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +9,7 @@ if (!isset($_SESSION['user'])) {
     <link href="../../public/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="../../public/css/sb-admin-2.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="/medical/public/css/all.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link href="/medical/public/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -27,7 +22,7 @@ if (!isset($_SESSION['user'])) {
             <div class="row">
                 <div class="col-lg-12">
                     
-                    <h1 style="font-family: Poppins;">MANAGE STUDENTS</h1>
+                    <h2 class="share" style="font-family: Poppins;">MANAGE STUDENTS</h2>
                     
                 </div>
             </div>

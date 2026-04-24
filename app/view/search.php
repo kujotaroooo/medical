@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require_once '../../config/config.php';
 include_once ('../model/fetchStudent.php')
 ?>
@@ -12,6 +12,7 @@ include_once ('../model/fetchStudent.php')
     <link href="/medical/public/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="/medical/public/css/sb-admin-2.css" rel="stylesheet">
     <link href="/medical/public/css/add.css" rel="stylesheet">
+    <link rel="stylesheet" href="/medical/public/css/all.css">
 
     <style>
         .content-wrapper {
