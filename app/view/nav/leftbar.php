@@ -11,16 +11,12 @@ login();
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-/* =========================
-   GLOBAL
-========================= */
 body {
     margin: 0;
-    padding-top: 50px;
+    padding-top: 70px;
     font-family: "Segoe UI", Arial, sans-serif;
     background: #f4fbf6;
 }
-
 
 .navbar {
     background: #28a745;
@@ -37,7 +33,6 @@ body {
 
     display: flex;
     align-items: center;
-    
 }
 
 .navbar-header {
@@ -49,27 +44,22 @@ body {
     font-weight: 600;
     font-size: 18px;
     text-decoration: none;
-  
 }
 
-/* =========================
-   SIDEBAR (FIXED)
-========================= */
 .sidebar {
     width: 250px;
     background: #ffffff;
 
     position: fixed;
-    top: 50px;
+    top: 70px;
     left: 0;
 
-    height: calc(100vh - 50px);
+    height: calc(100vh - 70px);
     overflow-y: auto;
 
     border-right: 1px solid #e6e6e6;
 }
 
-/* MENU */
 #side-menu {
     list-style: none;
     margin: 0;
@@ -92,14 +82,12 @@ body {
     color: #28a745;
 }
 
-/* HOVER */
 #side-menu li a:hover {
     background: #eaf7ef;
     border-left: 4px solid #28a745;
     color: #28a745;
 }
 
-/* SUBMENU */
 .nav-second-level {
     list-style: none;
     padding-left: 15px;
@@ -117,23 +105,28 @@ body {
     color: #28a745;
 }
 
-/* LOGOUT (RED) */
-#side-menu li:last-child a {
-    color: #c0392b;
+/* =========================
+   LOGOUT FIX (WORKING)
+========================= */
+.logout-link {
+    color: #c0392b !important;
 }
 
-#side-menu li:last-child a i {
-    color: #c0392b;
+.logout-link i {
+    color: #c0392b !important;
 }
 
-#side-menu li:last-child a:hover {
+.logout-link:hover {
     background: #fdecea;
     border-left: 4px solid #c0392b;
+    color: #a93226 !important;
+    transform: translateX(2px);
 }
 
-/* =========================
-   MAIN CONTENT AREA
-========================= */
+.logout-link:hover i {
+    color: #a93226 !important;
+}
+
 .content {
     margin-left: 250px;
     padding: 20px;
@@ -144,9 +137,6 @@ body {
 
 <body>
 
-<!-- =========================
-     TOP NAVBAR
-========================= -->
 <nav class="navbar">
     <div class="navbar-header">
         <a class="navbar-brand" href="dashboard.php">
@@ -155,9 +145,6 @@ body {
     </div>
 </nav>
 
-<!-- =========================
-     SIDEBAR
-========================= -->
 <div class="sidebar">
     <ul class="nav" id="side-menu">
 
@@ -206,7 +193,7 @@ body {
         </li>
 
         <li>
-            <a onclick="confirmLogout();">
+            <a class="logout-link" onclick="confirmLogout();">
                 <i class="fa fa-sign-out"></i> Logout
             </a>
         </li>
